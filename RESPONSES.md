@@ -48,15 +48,36 @@ input = at, count = 3
 input = hat, count = 10
 input = past, count = 41
 3. 
-The recursive function seems to be called first for the amount of letters in the string. Then, it creates permutations after that. Therefore, a formula could be n = string.size() + x, assuming x is the number of permutations able to be made with the string. 
+The recursive function seems to be called first for the amount of letters in the string. Then, it creates permutations after that. Using a graphing calculator, to find the slope using the input and counts as points (input, count), the line y = 19x - 35 is created. This is pretty accurate for the points, but not perfect.
 
 ## tower.cpp
+1. The number that affects the number of calls is the amount of disk on the tower that you are trying to move from A to C
 
-- input/parameter impacting number of calls
-- 3 specific examples of input/parameter and number of calls
-- number of recursive calls when input/parameter is *n*
+2. 
+input = 3, count = 7
+input = 5, count = 31
+input = 7, count = 127
+
+3. 
+
+The count is firstly the amount of disks on the tower, like the amount of characters in the string for the permutation program. Then it moves on to the moves it has to make to completely move the disks from tower A to C. Using a graphing calculator to find the slope using the input and counts as points (input, count), the line y = 30x - 83 fits somewhat nicely to the points.
 
 ## fibonacci2.cpp (presented in video lesson)
+
+1. The number that affects the number of calls is the amount of Fibonacci numbers in the seequence you want to find, denoted as N in the program.
+
+2. 
+input = 20, count = 56
+input = 50, count = 146
+input = 70, count = 206
+
+3. 
+
+
+
+
+
+
 
 - input/parameter impacting number of calls
 - 3 specific examples of input/parameter and number of calls

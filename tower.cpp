@@ -13,6 +13,11 @@ int main () {
 
 void tower (int n_disks, char from, char to, char interim) {
 	if (n_disks > 0) {
+
+		static unsigned int count = 0;
+		count++;
+		cout << " " << count << endl;
+		
 		tower(n_disks - 1, from, interim, to);
 		cout << "Move disk " << n_disks << " from " << from << " to " << to << endl;
 		tower(n_disks - 1, interim, to, from);
