@@ -16,7 +16,7 @@ Function is n + 1
 ## ireverse2.cpp
 
 1. 
-The number that affects number of calls is the number of digits in your input. Therefore, if your number is in the hundreds (ex. 123), then the recursive function will be called three times.
+The number that affects the number of calls is the number of digits in your input. Therefore, if your number is in the hundreds (ex. 123), then the recursive function will be called three times.
 
 2. 
 input = 456 (output = 654), count = 3
@@ -24,27 +24,31 @@ input = 1234 (output = 4321), count = 4
 input = 45678 (output = 87654), count = 5
 
 3. 
-Assuming x = the number of digits in the number, function is x.
+Assuming n = the number of digits in the number, function is n.
 
 ## sreverse2.cpp
 
 1. 
+The number that affects the number of calls is the amount of characters in the string.
 
 2. 
-input = 
+input = string, count = 6
+input = programming, count = 11
+input = computer, count = 8
 
 3. 
-
-
-- input/parameter impacting number of calls
-- 3 specific examples of input/parameter and number of calls
-- number of recursive calls when input/parameter is *n*
+Assuming n = the amount of characters in the string, function is n. A coding version of the formula could be n = string.size();
 
 ## permute.cpp
 
-- input/parameter impacting number of calls
-- 3 specific examples of input/parameter and number of calls
-- number of recursive calls when input/parameter is *n*
+1. 
+The number that affects the number of calls is the amount of characters in the string, which affects the amount of permutations able to be made.
+2. 
+input = at, count = 3
+input = hat, count = 10
+input = past, count = 41
+3. 
+The recursive function seems to be called first for the amount of letters in the string. Then, it creates permutations after that. Therefore, a formula could be n = string.size() + x, assuming x is the number of permutations able to be made with the string. 
 
 ## tower.cpp
 

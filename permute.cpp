@@ -16,6 +16,10 @@ void permute (const string& str, size_t pos) {
 	string s2 = str.substr(pos);		// variable part
 
 	if (s2.size()) { // if there is a variable part
+		static unsigned int count = 0;
+		count++;
+		cout << "counter = " << count << endl;
+
 		for (size_t i = 0; i < s2.size(); i++) {
 			permute(s1 + s2, pos + 1);
 			s2 = s2.substr(1) + s2.substr(0, 1); // move first character to end
