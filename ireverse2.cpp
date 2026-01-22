@@ -16,5 +16,9 @@ void reverse (unsigned int n) {
 	if (n) {
 		cout << n % 10;
 		reverse(n / 10);
+
+		static unsigned int count = 0;
+		count++;
+		cout << " " << count << endl;
 	}
 }
