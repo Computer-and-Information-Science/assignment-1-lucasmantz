@@ -64,7 +64,7 @@ The count is firstly the amount of disks on the tower, like the amount of charac
 
 ## fibonacci2.cpp (presented in video lesson)
 
-1. The number that affects the number of calls is the amount of Fibonacci numbers in the seequence you want to find, denoted as N in the program.
+1. The number that affects the number of calls is the amount of Fibonacci numbers in the sequence you want to find, denoted as N in the program.
 
 2. 
 input = 20, count = 56
@@ -73,12 +73,4 @@ input = 70, count = 206
 
 3. 
 
-
-
-
-
-
-
-- input/parameter impacting number of calls
-- 3 specific examples of input/parameter and number of calls
-- number of recursive calls when input/parameter is *n*
+Again, using a formula to find a "line of best fit" for the points, denoted as (input, count), the line y = 3x is created. This means that the count is about three times the amount of the input, which makes sense as I think it would be a count when the number is generated, when it is the first number being added, and the second number, as well.
